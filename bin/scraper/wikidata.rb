@@ -10,7 +10,6 @@ query = <<SPARQL
   WHERE {
     ?member p:P39 ?ps .
     ?ps ps:P39 wd:Q21295149 ; pq:P2937 wd:Q107486380 .
-    FILTER NOT EXISTS { ?ps pq:P582 ?end }
 
     OPTIONAL {
       ?ps prov:wasDerivedFrom ?ref .
